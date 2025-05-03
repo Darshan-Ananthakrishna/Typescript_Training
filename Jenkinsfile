@@ -18,7 +18,7 @@ pipeline{
  }
  stage ('Run Playwright Test'){
  steps{
- bat 'npx playwright test ${params.SPEC_FILE}'
+ bat 'npx playwright test'
  }
  }
  stage('Publish Report'){
