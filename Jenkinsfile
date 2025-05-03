@@ -1,7 +1,7 @@
 pipeline{
  agent any
  tools {
- nodejs "nodeJS24"
+ nodejs "NodeJS23"
  }
  parameters{
  string(name:'SPEC_FILE', defaultValue:'login.spec.ts', description:'Tags to run the script')
