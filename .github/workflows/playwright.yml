@@ -4,6 +4,12 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+  workflow_dispatch:   # 👈 enables manual trigger
+    inputs:
+      spec_file:
+        description: "Playwright spec file to run"
+        required: true
+        default: "e2e/example.spec.ts"
 jobs:
   test:
     timeout-minutes: 60
