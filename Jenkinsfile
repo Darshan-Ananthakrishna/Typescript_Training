@@ -25,7 +25,7 @@ pipeline{
  publishHTML(target:[
  reportName:"Playwright Test Report",
  reportDir: "${env.PLAYWRIGHT_HTML_REPORT}",
- reportFiles:index.html,
+ reportFiles:"index.html",
  ])
  }
  }
