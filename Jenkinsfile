@@ -13,7 +13,7 @@ pipeline{
  stage('Install Dependencies'){
  steps{
  bat 'npm install'
- bat 'npx playwright test ${params.FILE_NAME}'
+ bat 'npx playwright test ${params.SPEC_FILE}'
  }
  }
  stage ('Run Playwright Test'){
